@@ -1,0 +1,41 @@
+{
+    "national": {
+      "2024": {
+        "total": { "value": "2.88 Gt", "change": "+2.4%" },
+        "sectors": {
+          "power": { "value": "1.02 Gt", "change": "-1.2%", "icon": "Zap", "color": "climate-blue" },
+          "industry": { "value": "0.89 Gt", "change": "+3.1%", "icon": "Factory", "color": "warning" },
+          "buildings": { "value": "0.34 Gt", "change": "+1.8%", "icon": "Building", "color": "climate-blue" },
+          "transport": { "value": "0.32 Gt", "change": "+4.2%", "icon": "Truck", "color": "warning" },
+          "ccus": { "value": "12.4 Mt", "change": "+156%", "icon": "TrendingDown", "color": "climate-green" }
+        }
+      }
+    },
+    "states": {
+      "Maharashtra": {
+        "2024": {
+          "total": { "value": "350 Mt", "change": "+3.5%" },
+          "sectors": {
+            "power": { "value": "150 Mt", "change": "+2.1%" },
+            "industry": { "value": "120 Mt", "change": "+4.0%" },
+            "buildings": { "value": "40 Mt", "change": "+1.5%" },
+            "transport": { "value": "35 Mt", "change": "+5.2%" },
+            "ccus": { "value": "1.8 Mt", "change": "+200%" }
+          }
+        }
+      },
+      "Gujarat": {
+        "2024": {
+          "total": { "value": "310 Mt", "change": "+2.8%" },
+          "sectors": {
+            "power": { "value": "130 Mt", "change": "+1.9%" },
+            "industry": { "value": "110 Mt", "change": "+3.5%" },
+            "buildings": { "value": "35 Mt", "change": "+1.2%" },
+            "transport": { "value": "30 Mt", "change": "+4.8%" },
+            "ccus": { "value": "1.5 Mt", "change": "+180%" }
+          }
+        }
+      }
+    }
+  }
+  
