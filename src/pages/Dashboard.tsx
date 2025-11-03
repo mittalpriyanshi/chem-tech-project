@@ -1,7 +1,9 @@
 import EmissionMetrics from "@/components/dashboard/EmissionMetrics";
 import { Card } from "@/components/ui/card";
-import { BarChart3, TrendingUp, MapPin, Filter } from "lucide-react";
+import { BarChart3, Filter, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import SectorChart from "@/components/dashboard/SectorChart";
+import RegionalHotspotsChart from "@/components/dashboard/RegionalHotspotsChart";
 
 const Dashboard = () => {
   return (
@@ -24,7 +26,7 @@ const Dashboard = () => {
         {/* Charts and Visualizations */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
           {/* Sector Breakdown Chart */}
-          <Card className="dashboard-card p-6">
+          <div>
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-xl font-semibold text-foreground">Sector-wise Emissions</h3>
               <Button variant="outline" size="sm">
@@ -32,17 +34,11 @@ const Dashboard = () => {
                 Filter
               </Button>
             </div>
-            <div className="h-64 bg-muted/20 rounded-lg flex items-center justify-center">
-              <div className="text-center">
-                <TrendingUp className="w-12 h-12 text-muted-foreground mx-auto mb-2" />
-                <p className="text-muted-foreground">Interactive chart will be implemented here</p>
-                <p className="text-sm text-muted-foreground mt-1">Showing power, industry, transport, buildings</p>
-              </div>
-            </div>
-          </Card>
+            <SectorChart />
+          </div>
 
-          {/* Emissions Map */}
-          <Card className="dashboard-card p-6">
+          {/* Regional Hotspots Chart */}
+          <div>
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-xl font-semibold text-foreground">Regional Hotspots</h3>
               <Button variant="outline" size="sm">
@@ -50,14 +46,8 @@ const Dashboard = () => {
                 States
               </Button>
             </div>
-            <div className="h-64 bg-muted/20 rounded-lg flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="w-12 h-12 text-muted-foreground mx-auto mb-2" />
-                <p className="text-muted-foreground">India emissions map will be shown here</p>
-                <p className="text-sm text-muted-foreground mt-1">Gujarat, Maharashtra, Odisha, Jharkhand</p>
-              </div>
-            </div>
-          </Card>
+            <RegionalHotspotsChart />
+          </div>
         </div>
 
         {/* Additional Analytics */}
