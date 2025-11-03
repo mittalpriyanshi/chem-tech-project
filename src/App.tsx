@@ -13,6 +13,8 @@ import Technologies from "./pages/Technologies";
 import KnowledgeHub from "./pages/KnowledgeHub";
 import ChemicalEngineers from "./pages/ChemicalEngineers";
 import NotFound from "./pages/NotFound";
+import AIAssistant from "./pages/AIAssistant";
+import Roadmap from "./pages/Roadmap";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +40,8 @@ const App = () => (
                 <Route path="/technologies" element={<Technologies />} />
                 <Route path="/knowledge-hub" element={<KnowledgeHub />} />
                 <Route path="/chemical-engineers" element={<ChemicalEngineers />} />
+                <Route path="/ai-assistant" element={<AIAssistant />} />
+                <Route path="/roadmap" element={<Roadmap />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>
