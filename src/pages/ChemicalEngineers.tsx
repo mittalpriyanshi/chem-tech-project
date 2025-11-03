@@ -1,7 +1,10 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import ChemicalEngineersWorkflow from "@/components/knowledge/ChemicalEngineersWorkflow";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Beaker, TrendingUp, Leaf, ArrowRight, Zap, Factory, FlaskConical } from "lucide-react";
+
+
 
 const ChemicalEngineers = () => {
   return (
@@ -24,7 +27,7 @@ const ChemicalEngineers = () => {
           </div>
         </div>
       </section>
-
+      <ChemicalEngineersWorkflow />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Overview */}
         <section className="mb-16">

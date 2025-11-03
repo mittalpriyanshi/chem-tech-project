@@ -64,15 +64,7 @@ const workflowSteps = [
 const ChemicalEngineersWorkflow = () => {
   return (
     <section className="mb-16">
-      <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-foreground mb-4">
-          Role of Chemical Engineers in CCUS
-        </h2>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Step-by-step workflow for chemical engineers developing CCUS solutions
-        </p>
-      </div>
-
+     
       <div className="grid gap-6 md:gap-8">
         {workflowSteps.map((step, index) => {
           const Icon = step.icon;

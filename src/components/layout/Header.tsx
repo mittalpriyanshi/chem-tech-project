@@ -13,7 +13,9 @@ const Header = () => {
     { name: "Technologies", href: "/technologies" },
     { name: "Calculator", href: "/calculator" },
     { name: "Knowledge Hub", href: "/knowledge-hub" },
-    { name: "Role of Chemical Engineers", href: "/chemical-engineers" }
+    { name: "Role of Chemical Engineers", href: "/chemical-engineers" },
+    { name: "Roadmap", href: "/roadmap" },
+    { name: "AI Assistant", href: "/ai-assistant" }
   ];
 
   return (

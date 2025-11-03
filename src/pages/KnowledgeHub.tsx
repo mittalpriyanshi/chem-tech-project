@@ -1,4 +1,4 @@
-import ChemicalEngineersWorkflow from "@/components/knowledge/ChemicalEngineersWorkflow";
+
 import GlobalCaseStudies from "@/components/knowledge/GlobalCaseStudies";
 
 const KnowledgeHub = () => {
@@ -15,7 +15,7 @@ const KnowledgeHub = () => {
           </p>
         </div>
         
-        <ChemicalEngineersWorkflow />
+       
         <GlobalCaseStudies />
       </div>
     </div>
