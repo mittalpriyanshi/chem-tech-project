@@ -14,6 +14,24 @@ A modern climate tech dashboard for chemical engineering, emissions visualizatio
 
 ---
 
+## Added Features (Project-specific)
+
+- **Sector-wise Emissions Chart (Recharts):**
+  - Implemented `SectorChart` with `ResponsiveContainer`, axes, tooltips, legend.
+  - Integrated into `src/pages/Dashboard.tsx` under “Sector-wise Emissions”.
+- **Regional Hotspots Chart (Recharts):**
+  - New `RegionalHotspotsChart` horizontal bar chart for top emitting states.
+  - Wired into Dashboard under “Regional Hotspots”.
+- **AI Assistant Integration (Supabase Edge Function + Gemini):**
+  - Edge Function at `supabase/functions/ai-assistant/index.ts` with CORS, input/env validation, error handling, normalized `{ answer }` response.
+  - Frontend page `src/pages/AIAssistant.tsx` invoking the function and rendering Markdown with `react-markdown` + `remark-gfm`.
+- **Supabase Client Setup:**
+  - `src/integrations/supabase/client.ts` uses `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY`.
+- **.gitignore Hardened:**
+  - Ignores `.env`, `.env.*`, `.env.local`, and local Supabase artifacts.
+
+---
+
 ## Folder Structure
 ```
 chem-tech-project/
